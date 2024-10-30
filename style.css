@@ -1,0 +1,148 @@
+* {
+  /* border: 2px solid red; */
+}
+
+.form-body {
+  background-image: url("./Home.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.home-heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: aliceblue;
+}
+.container {
+  flex-direction: column;
+  max-width: 50%;
+  height: 50%;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  --animate-delay: 2s;
+}
+#register-form{
+    gap: 8px;
+}
+input {
+  border-width: 1px;
+  border-radius: 5px;
+  background-color: inherit;
+  font-size: 15px;
+  border-color: aliceblue;
+  color: aliceblue;
+  padding: 6px;
+}
+input:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  border-radius: 10px;
+  height: 40px;
+  color: rgb(17, 39, 139);
+}
+button:hover {
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+}
+.home-button{
+    width: 200px;
+    color: black;
+
+}
+.home-button .home-link:hover{
+    color: white;
+}
+
+.mybutton{
+    width: 50vh;
+}
+
+
+.slide-up-element {
+  position: absolute;
+  top: 15%; /* initial position */
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+.anchor-tag{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: rgb(22, 0, 148);
+    padding: 2vh;
+    padding-bottom: 3vh;
+    height:5vh;
+}
+.mybody{
+    background-image:none;
+    padding: 0;
+    margin: 0;
+}
+.logout-button{
+    float: right;
+    width: 100px;
+}
+
+.profile-heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+
+.slide-right-element {
+    position: absolute;
+    left: 50%; /* initial position */
+    animation: slide-right 3s;
+  }
+  
+  @keyframes slide-right {
+    0% {
+      left:0%;
+    }
+    100% {
+      right: 20%;
+    }
+  }
+
+  .slide-right-element-behind {
+    position: absolute;
+    left: 30%; /* initial position */
+    animation: slide-right-behind 3s;
+  }
+  
+  @keyframes slide-right-behind {
+    0% {
+      left: 0%;
+    }
+    100% {
+      right: 20%;
+    }
+  }

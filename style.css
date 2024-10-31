@@ -4,6 +4,7 @@
 
 .form-body {
   background-image: url("./Home.png");
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +63,8 @@ button:hover {
   cursor: pointer;
 }
 .home-button{
-    width: 200px;
+    width: 16vw;
+
     color: black;
 
 }
@@ -146,3 +148,8 @@ nav{
       right: 20%;
     }
   }
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
